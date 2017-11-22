@@ -1,0 +1,64 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+strong{
+	color: #c8c8c8!important;
+}
+
+.artist-container{
+	/* background-color: #1c1e22;  */
+	padding: 40px 25px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 7px;
+    padding-top: 15px;
+    background-image: linear-gradient(#8a9196, #7a8288 60%, #70787d);
+    background-repeat: no-repeat;
+    color: #fff!important;
+}
+
+container p a {
+	text-decoration: underline!important;
+}
+
+container p a:hover {
+	text-decoration: none!important;
+}
+
+.my-app{
+	position: relative;
+}
+
+.foot-height{
+	bottom: 0;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  /* width: 100%!important; */
+  max-width: 1000px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/slate/bootstrap.min.css">
+
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <base href="/ngspotify">
+    <my-app class="my-app">Loading Spotify search ...</my-app>
+    
+    <footer class="footer">
+      <div class="container">
+        <p>Spotify Angular 2 app by <a href="http://brettsartain.org">Brett Sartain</a> | 803.238.3835 | <a href="mailto:btsartain@yahoo.com">btsartain@yahoo.com</a></p>
+      </div>
+    </footer>
+
+    <script>
+      // $(document).ready(function(){
+      //   $('.footer').css({
+      //       'bottom':'0'
+      //     });
+      // });
+      // $('input').on('keyup',function(){
+      //   var main = $('.main').height();
+      //   $('.footer').css('bottom', main);
+      // });  
+      // $('input').on('keyup', function(){
+      //   $('footer').removeAttr('style');
+      //   var main = $('.main').height();
+      //   $('.footer').css('bottom', main);
+      // });
+    </script>
+
+  </body>
+</html>

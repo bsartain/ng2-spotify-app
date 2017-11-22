@@ -1,0 +1,36 @@
+<h1>Search Music?</h1>
+	<p>Use the Angular 2 Spotify app to browse artists, music and more</p>
+
+	<form>
+		<div class="form-group">
+			<input type="text" id="key" class="form-control" placeholder='Search Artists...' [(ngModel)]="searchStr" name="searchStr" (keyup)="searchMusic()">
+		</div>
+	</form>
+
+	<div *ngIf="searchRes">
+		<div *ngFor="let artist of searchRes">
+			<div class="row artist-container">	
+				<div class="col-md-2" *ngIf="artist.images.length > 0">	
+					<img src="{{ artist.images[0].url }}" style="width: 100%">
+				</div>
+				<div class="col-md-2" *ngIf="artist.images.length == 0">	
+					<img src="http://earbud.fm/assets/img/default-avatar.png" style="width: 100%">
+				</div>		
+				<div class="col-md-10">					
+					<h4>{{ artist.name }}</h4>
+					<div>
+						<p><span class="label label-primary">Followers: {{ artist.followers.total }}</span> </p>
+						
+						<p><strong>Artist Page: </strong><a href="{{ artist.external_urls.spotify }}" target="_blank">{{ artist.external_urls.spotify }}</a></p>
+						
+						<p><strong>Genres: </strong><span *ngFor="let genre of artist.genres">{{ genre }}</span></p>
+					</div>			
+				</div>							
+			</div>
+			<hr>
+		</div>
+	</div>
+
+	
+
+	
